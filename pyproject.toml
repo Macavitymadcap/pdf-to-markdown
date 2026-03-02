@@ -1,0 +1,13 @@
+# pyproject.toml
+[project]
+name = "pdf-to-markdown"
+version = "0.1.0"
+description = "Extract text from PDFs and convert to Markdown"
+requires-python = ">=3.11"
+dependencies = [
+    "pymupdf>=1.23.0",
+]
+
+[project.scripts]
+pdf2md = "pdf_to_markdown.cli:main"
+slice-pdf = "pdf_to_markdown.slice_cli:main"
